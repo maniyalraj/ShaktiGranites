@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="UTF-8">
+<title>Shakti Granite</title>
+
+<script src="public/bower_components/jQuery/dist/jquery.js"></script>
+ <script src="public/bower_components/angular/angular.min.js"></script>
+ <script src="public/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+ <script src="public/js/app.js"></script>
+ <script src="public/js/controller/home2Controller.js"></script>
+ 
+ 
+<!--   <script>
+
+
+    var angle = 0;
+    function galleryspin(sign,isContinue) {
+    	
+    	spinner = document.querySelector("#spinner");
+        if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
+        spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
+    	
+    }
+    	
+</script> -->
+ 
+
+
+
+<link rel="stylesheet" type="text/css" href="public/bower_components/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="public/css/app.css">
+
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+ -->
+
+</head>
+<body>
+<div class="row">
+    <div class="col-md-2">
+    <div class="logo"></div>
+        <div class="menubar">
+            <ul class="nav nav-pills nav-stacked">
+                <li><a ui-sref="home">Home</a></li>
+                <li><a ui-sref="home2">Product</a></li>
+                <li><a href="#">Showcase</a></li>
+                <li><a href="#">Our Client</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Email</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-10">
+
+        <div ui-view></div>
+
+    </div>
+</div>
+
+
+
+</body>
+</html>
