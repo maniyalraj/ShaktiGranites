@@ -18,6 +18,14 @@ $stateProvider
 	name: 'home2',
 	url: '/home2',
 	templateUrl: "public/partials/home2.html"
+}).state('contact', {
+	name: 'contact',
+	url: '/contact',
+	templateUrl: "public/partials/contact.html"
+}).state('ourClient', {
+	name: 'ourClient',
+	url: '/ourClient',
+	templateUrl: "public/partials/ourClient.html"
 });
 
 });
