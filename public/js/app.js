@@ -1,40 +1,45 @@
-//var app = angular.module("myApp", ["ngRoute"]);
+//var app = angular.module('myApp', ['ngRoute']);
 
-var app = angular.module("myApp", ["ui.router"]);
+var app = angular.module('myApp', ['ui.router','ngMaterial', 'ngMessages']);
 app.config(function($stateProvider, $urlRouterProvider) {
     
-	/*$urlRouterProvider
-    .otherwise( {
-        templateUrl : "public/partials/home.html"
-    });*/
+	$urlRouterProvider
+    .when('', '/home2');
     
 
 $stateProvider
 .state('home', {
 	name: 'home',
 	url: '/home',
-	templateUrl: "public/partials/home.html"
+	templateUrl: 'public/partials/home.html'
 }).state('home2', {
 	name: 'home2',
 	url: '/home2',
-	templateUrl: "public/partials/home2.html"
+	templateUrl: 'public/partials/home2.html'
 }).state('contact', {
 	name: 'contact',
 	url: '/contact',
-	templateUrl: "public/partials/contact.html"
+	templateUrl: 'public/partials/contact.html'
 }).state('ourClient', {
 	name: 'ourClient',
 	url: '/ourClient',
-	templateUrl: "public/partials/ourClient.html"
+	templateUrl: 'public/partials/ourClient.html'
+}).state('products', {
+	name: 'products',
+	url: '/products',
+	templateUrl: 'public/partials/products.html'
 });
 
 });
 
+/*angular.module('myApp', [])
+.config(['$controllerProvider',
+    function ($controllerProvider) {
+        $controllerProvider.allowGlobals();
+    }
+]);*/
 
-$( document ).ready(function() {
 
-
-});
 
 
 

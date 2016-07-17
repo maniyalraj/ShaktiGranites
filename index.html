@@ -1,16 +1,32 @@
 <!DOCTYPE html>
-<html ng-app="myApp">
+<html >
 <head>
 <meta charset="UTF-8">
 <title>Title goes here</title>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+<!-- 
+<script src="public/bower_components/jQuery/src/jquery.js"></script> -->
 
-<script src="public/bower_components/jQuery/dist/jquery.js"></script>
- <script src="public/bower_components/angular/angular.min.js"></script>
- <script src="public/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
- <script src="public/js/app.js"></script>
- <script src="public/js/controller/home2Controller.js"></script>
- 
- 
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="public/bower_components/angular/angular.min.js"></script>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script> -->
+<script
+	src="public/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+
+<!-- Angular Material Library -->
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+
+<script src="public/js/app.js"></script>
+<script src="public/js/controller/home2Controller.js"></script>
+
+
 <!--   <script>
 
 
@@ -24,11 +40,12 @@
     }
     	
 </script> -->
- 
 
 
 
-<link rel="stylesheet" type="text/css" href="public/bower_components/bootstrap/dist/css/bootstrap.css">
+
+<link rel="stylesheet" type="text/css"
+	href="public/bower_components/bootstrap/dist/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="public/css/app.css">
 
 
@@ -37,27 +54,28 @@
  -->
 
 </head>
-<body>
-<div class="row1">
-    <div class="col-md-2">
-    <div class="logo"></div>
-        <div class="menubar">
-            <ul class="nav nav-pills nav-stacked">
-                <li class="listMenu"><a ui-sref="home2">Home</a></li>
-                <li class="listMenu"><a ui-sref="home">Product</a></li>
-                <li class="listMenu"><a href="#">Showcase</a></li>
-                <li class="listMenu"><a ui-sref="ourClient">Our Client</a></li>
-                <li class="listMenu"><a ui-sref="contact">Contact</a></li>
-                <li class="listMenu"><a href="#">Email</a></li>
-            </ul>
-        </div>s
-    </div>
-    <div class="col-md-10">
+<body ng-app="myApp">
+	<div class="row1">
+		<div class="col-md-2">
+			<div class="logo"></div>
+			<div class="menubar">
+				<ul class="nav nav-pills nav-stacked">
+					<li class="listMenu"><a ui-sref="home2">Home</a></li>
+					<li class="listMenu"><a ui-sref="products">Product</a></li>
+					<li class="listMenu"><a href="#">Showcase</a></li>
+					<li class="listMenu"><a ui-sref="ourClient">Our Client</a></li>
+					<li class="listMenu"><a ui-sref="contact">Contact</a></li>
+					<li class="listMenu"><a href="#">Email</a></li>
+				</ul>
+			</div>
+			
+		</div>
+		<div class="col-md-10">
 
-        <div ui-view></div>
+			<div ui-view></div>
 
-    </div>
-</div>
+		</div>
+	</div>
 
 
 

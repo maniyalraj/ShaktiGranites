@@ -2,7 +2,7 @@
  * 
  */
 
-app.controller('home2Controller',function(){
+app.controller('home2Controller',function($scope, $mdDialog, $mdMedia){
 	var $=angular.element;
 	
 	var carousel = $(".carousel"),
@@ -24,5 +24,35 @@ app.controller('home2Controller',function(){
 	"-o-transform": "rotateY("+currdeg+"deg)",
 	"transform": "rotateY("+currdeg+"deg)"
 	});
+	//custom dialouges
 	}
-})
+	  $scope.showAdvanced = function(ev) {
+	    var useFullScreen = ($mdMedia('sm') || $mdMedia('xs'))  && $scope.customFullscreen;
+
+	    $mdDialog.show({
+	      controller: DialogController,
+	      templateUrl: 'public/partials/customdialouge.html',
+	      parent: angular.element(document.body),
+	      targetEvent: ev,
+	      clickOutsideToClose:true,
+	      fullscreen: useFullScreen
+	    })
+	    .then(function(answer) {
+	      $scope.status = 'You said the information was "' + answer + '".';
+	    }, function() {
+	      $scope.status = 'You cancelled the dialog.';
+	    });
+	}
+	
+});
+function DialogController($scope, $mdDialog) {
+  $scope.hide = function() {
+    $mdDialog.hide();
+  };
+  $scope.cancel = function() {
+    $mdDialog.cancel();
+  };
+  $scope.answer = function(answer) {
+    $mdDialog.hide(answer);
+  }
+  }
