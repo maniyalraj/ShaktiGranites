@@ -1,6 +1,8 @@
 @CHARSET "ISO-8859-1";
 body{
-	background:url('../images/bg2.jpg');
+	background:url('../images/bg2.jpg ');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 a{
     color: orange !important;
@@ -8,13 +10,16 @@ a{
 
 .menubar{
     
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
     margin-top: 50px;
-    opacity: 0.6; 
+    opacity: 0.6;
+    width: 160px;
 }
 
 .logo{
-	background: url('../images/logo1.jpeg');
+	background: url('../images/Shakti Granite.jpg');
 	background-size:contain;
 	background-repeat:no-repeat;
 	height:100px;
