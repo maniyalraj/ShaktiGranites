@@ -28,6 +28,10 @@ $stateProvider
 	name: 'products',
 	url: '/products',
 	templateUrl: 'public/partials/products.html'
+}).state('company',{
+	name: 'company',
+	url: '/company',
+	templateUrl: 'public/partials/company.html'
 });
 
 });
