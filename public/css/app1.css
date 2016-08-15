@@ -1,0 +1,18 @@
+/*body {
+    margin-top: 50px; !* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. *!
+}*/
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+.full {
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: 100% 100%;
+    -o-background-size: cover;
+}
+
+.shakti-container{
+    width: 100%;
+    background-color: #2aabd2;
+}

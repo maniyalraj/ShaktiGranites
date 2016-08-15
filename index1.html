@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+    <!--
+    <script src="public/bower_components/jQuery/src/jquery.js"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="public/bower_components/angular/angular.min.js"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script> -->
+    <script
+            src="public/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script
+            src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+    <script
+            src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+    <script
+            src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+
+    <!-- Angular Material Library -->
+    <script
+            src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+
+    <script src="public/js/app.js"></script>
+    <script src="public/js/controller/home2Controller.js"></script>
+
+
+
+    <link rel="stylesheet" type="text/css"
+          href="public/bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="public/css/app1.css">
+</head>
+<body class="full">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="./public/images/Shakti%20Granite.jpg" style="height: 60px">
+
+            </a>
+            <a class="navbar-brand" href="#">
+
+                <img alt="Brand" src="./public/images/Shakti%20Stone.jpg" style="height: 60px">
+            </a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a ui-sref="home2">Home</a>
+                </li>
+                <li>
+                    <a ui-sref="ourClient">Company</a>
+                </li>
+                <li>
+                    <a href="#">Product</a>
+                </li>
+                <li>
+                    <a href="#">Gallery</a>
+                </li>
+                <li>
+                    <a href="#">Mines</a>
+                </li>
+                <li>
+                    <a href="#">Aim</a>
+                </li>
+                <li>
+                    <a href="#">Applications</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="shakti-container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div ui-view></div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

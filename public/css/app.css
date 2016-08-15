@@ -1,6 +1,6 @@
 @CHARSET "ISO-8859-1";
 body{
-	background:url('../images/bg2.jpg ');
+	background:url('../images/background.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -231,6 +231,50 @@ font-family: Courier;
 font-weight: bold;
 
 }
+
+.company-shakti{
+    margin-top: 75px;
+    width:1000px;
+    height: 500px;
+    border: 1px solid;
+
+}
+
+ul{
+    padding: 0px !important;
+}
+
+
+.company-shakti ul.company-list{
+    border-style: none !important ;
+    list-style-type: none;
+
+}
+
+.company-shakti ul.company-list li{
+
+   /*width: 50%;*/
+    text-align: center;
+    display: inline;
+
+}
+
+.company-data{
+    float: left;
+    width: 499px;
+    text-align: center;
+    color: #fff;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: large;
+    border: 1px solid;
+
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus
+
 
 .contactPerson{
 
