@@ -4,7 +4,7 @@ var app = angular.module('myApp', ['ui.router','ngMaterial', 'ngMessages']);
 app.config(function($stateProvider, $urlRouterProvider) {
     
 	$urlRouterProvider
-    .when('', '/home2');
+    .when('', '/home');
     
 
 $stateProvider
@@ -35,6 +35,8 @@ $stateProvider
 });
 
 });
+
+
 
 /*angular.module('myApp', [])
 .config(['$controllerProvider',
