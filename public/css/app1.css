@@ -57,6 +57,53 @@ body {
 
 }
 
+.contactContainer{
+    margin-top: 130px;
+
+    font-family: Helvetica;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    color: #fff;
+    background-color: rgba(12,12,12,0.5);
+    padding-bottom: 20px;
+
+}
+
+.addressDetails ul{
+    list-style-type: none;
+}
+.addressDetails li{
+    display: inline-block;
+    padding: 30px;
+}
+
+
+.contactDetails ul{
+    list-style-type: none;
+}
+.contactDetails li{
+    padding-left: 30px;
+
+}
+.contactDetails li:first-child{
+    padding-top: 30px;
+}
+.contactDetails li:nth-child(2){
+    padding-top: 20px;
+}
+
+.contactDetails p{
+    font-size: 20px;
+}
+
+.contactDetails p:first-child{
+    font-weight: bold;
+}
+
+
+
+
 .companyInfo{
 
     margin-top: 100px;
@@ -72,6 +119,7 @@ body {
 
 }
 
+
 .whoWeAre{
     padding-left: 42px;
     width: 450px;
@@ -86,7 +134,22 @@ body {
 }
 
 .productsContainer{
-    margin-top: 120px;
+    margin-top: 100px;
+}
+.contactContainer h2{
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.card-title{
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card-text{
+    line-height: 25px;
 }
 
 
