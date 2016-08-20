@@ -39,22 +39,36 @@ body {
 }
 
 .homeContainer h1{
-    font-size: 50px;
+    font-size: 25px;
     font-family: 'Crete Round', serif;
 
 }
 
 .homeContainer p{
 
-    font-weight: bold;
+    font-weight: normal;
     font-size: medium;
 }
 .graniteContent{
 
-    margin-top: 58px;
-    margin-left: 100px;
+   /* margin-top: 58px;
+    margin-left: 100px;*/
     position: relative;
+    padding-top: 25px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 25px;
+    line-height: 25px;
 
+
+}
+
+.legacyContent{
+
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 25px;
 }
 
 .contactContainer{
@@ -101,8 +115,13 @@ body {
     font-weight: bold;
 }
 
+.cHeader{
+    box-shadow: 0 0 0 10px rgba(214, 104, 10, 0.5), 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+    background-color: rgba(214, 104, 10, 0.5);
+    border: 2px dashed #fff;
+    padding-left: 10px;
 
-
+}
 
 .companyInfo{
 
@@ -377,14 +396,14 @@ body {
 
 .ribbon {
     background: rgba(216,77,23,0.5);
-    height: 65px;
+    height: 50px;
     width: auto;
     display: inline-block;
-    padding: 0 40px 0 20px;
+    padding: 0 30px 0 20px;
     margin: auto;
     position: relative;
     color: #fff;
-    line-height: 65px;
+    line-height: 50px;
     font-size: 36px;
     text-align: center;
    /* margin-left: 100px;*/
@@ -404,6 +423,33 @@ body {
 
 .ribbon:after{
     content: '';
+    border: 25px solid transparent;
+    border-left-color: rgba(216,77,23,0.5);;
+    border-left-width: 50px;
+    position: absolute;
+    top: 0;
+    right: -75px;
+
+}
+
+
+.ribbon1{
+    background: rgba(216,77,23,0.5);
+    height: 65px;
+    width: auto;
+    display: inline-block;
+    padding: 0 40px 0 20px;
+    margin: auto;
+    position: relative;
+    color: #fff;
+    line-height: 65px;
+    font-size: 36px;
+    text-align: center;
+
+}
+
+.ribbon1:before{
+    content: '';
     border: 33px solid transparent;
     border-left-color: rgba(216,77,23,0.5);;
     border-left-width: 43px;
@@ -412,6 +458,7 @@ body {
     right: -76px;
 
 }
+
 .whyUsList{
     padding-top: 10px;
 }
